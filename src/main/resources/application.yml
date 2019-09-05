@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis
+    type: org.springframework.jdbc.datasource.DriverManagerDataSource
+  thymeleaf:
+    cache: false
+mybatis:
+  #全局配置文件
+  config-location: classpath:mybatis/mybatis-config.xml
+  #mapper配置文件
+  mapper-locations: classpath:mybatis/mapper/*.xml
